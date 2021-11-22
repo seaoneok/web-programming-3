@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  a {
+    color: white;
+    text-decoration: none; 
+   
+  }
+  body {
+    position:absolute;
+    top:50px;
+    right: 540px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: block;
+    color: white;
+    background-color: #444444;
+    font-family:sans-serif;
+  }
+
+  .form-wrap {
+    background-color: #15181b;
+    width: 400px;
+    
+  }
+  .form-wrap .tabs {
+      overflow: hidden; 
+  }
+  .form-wrap .tabs h3 {
+      float: left;
+      width: 50%;
+  }
+
+  .form-wrap .tabs h3 a {
+   padding: 1rem 0;
+   text-align: center;
+   justify-content: center;
+   font-size:18px;
+   background-color: rgba(202, 202, 202, 0.938);
+    border-top:6px solid rgba(202, 202, 202, 0.938);
+   font-weight: lighter;
+   display: block;
+   color: rgb(134, 134, 134); 
+       
+  }
+  .form-wrap .tabs h3 a.active {
+    background-color: white;
+    border-top:6px solid #2F558E;
+    color:rgb(75, 75, 75);
+    font-weight: lighter;
+
+  }
+  .form-wrap .tabs-content {
+      padding: 1.3em; 
+  }
+
+  #explain-content{
+    display: none;
+  }
+
+  #error-content{
+    display: none;
+    color:red;
+  }
+
+  .form-wrap .tabs-content div[id$="tab-content"] {
+    display: none;
+  }
+
+  .form-wrap .tabs-content div[id="sign-complete-tab-content"] {
+    display: none;
+  }
+
+  .form-wrap .tabs-content .active {
+    display: block !important; 
+  }
+    .form-wrap form .input {
+    color:#CFCFCF;
+    background-color: #15181b;;
+    border: 1px solid #CFCFCF;
+      font-family: sans-serif;
+      padding: .8em 0 10px .8em;
+      display: inline-block;
+      margin: .4rem 0 .8rem 0;
+      padding-right: 2em;
+      width: 100%; 
+      font-size: 16px;
+  }
+
+
+  .form-wrap form .button {
+      width: 100%;
+      padding: .8em 0 10px .8em;
+      background-color: #2F558E;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 20px;
+  }

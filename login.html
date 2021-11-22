@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup and Signin form</title>
+    <link rel=" stylesheet" href="login.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+    <body>
+    <div class="form-wrap">
+            <div class="tabs">
+              <h3 id = "login-tab" class="login-tab"><a class="active" href="#login-tab-content">Login</a></h3>
+              <h3 id = "signup-tab" class="signup-tab"><a href="#signup-tab-content">Sign Up</a></h3>   
+            </div>
+            <div id = "tabs-content" class="tabs-content">
+              <div id="login-tab-content"  class="active">
+                <form class="login-form" id="input" action="" method="post">
+                  <h3>Login</h3>
+                  <br>
+                  <h4 id = "explain-content" class = "active">Enter user name and password:</h4>
+                  <h4 id = "error-content">Credential do not match!</h4>
+                  <br>
+                    <label>Email</label>
+                    <input type="email" class="input" id="login_e" autocomplete="off" placeholder="Email" required >
+                    <span id="emailMsg"></span>
+                    <label>Password</label>
+                    <input type="password" class="input" id="login_p" autocomplete="off" placeholder="Password" required>
+                    <span id="passMsg"></span>
+                    <input type="submit" id = "login" class="button" value="Login">
+                </form>
+              </div>
+                  <div id="signup-tab-content">
+                      <form class="signup-form" action="" method="post">
+                        <h3>Sign up</h3>
+                        <br>
+                        <h4>Fill in the form:</h4>
+                        <br>
+                        <label>First Name</label>
+                        <input type="text" class="input" id="first_name" autocomplete="off" placeholder="First name" required>
+                        <span id="firstNameMsg"></span>
+                        <label>Last Name</label>
+                        <input type="text" class="input" id="last_name" autocomplete="off" placeholder="Last name" required>
+                        <span id="lastNameMsg"></span>
+                        <label><input type="radio" name="sex" class = "sex" id = "sex1" value="Male"> Male</label>
+                        <label><input type="radio" name="sex" class = "sex" id = "sex2" value="Female">Female</label>
+                        <span id="genderMsg"></span>
+                        <br><br>
+                        <label>Email</label>
+                        <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email" required>
+                        <span id="sign_emailMsg"></span>
+                        <label>Password</label>
+                        <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password" required>
+                        <span id="sign_passMsg"></span>
+                        <label>Confirm password</label>
+                        <input type="password" class="input" id="user_check_pass" autocomplete="off" placeholder="Confirm password" required>
+                        <span id="sign_checkPassMsg"></span>
+                        <input id = "submit" type="submit" class="button" value="Sign Up">
+                        </form>
+                  </div>
+                  <div id = "sign-complete-tab-content">
+                    <p>You are signed up</p>
+                  </div>
+            </div>
+          </div>
+      </div>
+      <div id = "logged-in"></div>
+      <script src="login.js"></script>
+      <script src="signup.js"></script>
+    </body>
+</html>
